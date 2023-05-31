@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class FileHandler {
+public class FileHandlerTest {
 	
 	public static void main(String[] args) throws IOException {
 		readFileAndDisplayInConsole();
@@ -16,7 +16,7 @@ public class FileHandler {
 
 	public static void readFileAndDisplayInConsole() throws IOException {
 		System.out.println("Executing readFileAndDisplayInConsole():");
-		File inputFile = new File("ToBuyList.txt");
+		File inputFile = new File("Poem.txt");
 		Scanner input = new Scanner(inputFile);
 		
 		while (input.hasNextLine()) {
