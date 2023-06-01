@@ -16,7 +16,7 @@ public class FileHandlerTest {
 
 	public static void readFileAndDisplayInConsole() throws IOException {
 		System.out.println("Executing readFileAndDisplayInConsole():");
-		File inputFile = new File("Poem.txt");
+		File inputFile = new File("ShoppingList.txt");
 		Scanner input = new Scanner(inputFile);
 		
 		while (input.hasNextLine()) {
@@ -59,7 +59,7 @@ public class FileHandlerTest {
 	
 	public static void readFileAndWriteFile() throws IOException {
 		System.out.println("\r\nExecuting readFileAndWriteFile():");
-		File inputFile = new File("ToBuyList.txt");
+		File inputFile = new File("ShoppingList.txt");
 		Scanner input = new Scanner(inputFile);
 		FileWriter file = new FileWriter("OutputFile.txt", false);
 		while (input.hasNextLine()) {
